@@ -33,6 +33,12 @@ function setHour(greeting,hours){
 }
 
 function changeBg(){
-    const body = document.querySelector('body')
+    const button = document.querySelector('.container button');
+    if (button.innerHTML == 'modo light'){
+        button.innerHTML = 'modo dark'
+    }else{
+        button.innerHTML = 'modo light'
+    };
+    const body = document.querySelector('body');
     body.classList.toggle('bg-light');
 }
