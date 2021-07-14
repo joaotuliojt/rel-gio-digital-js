@@ -41,4 +41,12 @@ function changeBg(){
     };
     const body = document.querySelector('body');
     body.classList.toggle('bg-light');
+    rotateBtn(button)
 }
+
+function rotateBtn(button){
+    button.classList.toggle('rotate-button')
+}
+
+
+
