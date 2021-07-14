@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Orbitron', sans-serif;
+    background: #171614;
+    transition: 0.5s;
+}
+body.bg-light{
+    background: white;
+    color: black;
+}
+body.bg-light .container{
+    color: black;
+}
+
+.container{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20vh;
+    color:white;
+}
+.container button{
+    margin-top: 3rem;
+    font-size: 2rem;
+    background: #ff8811;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+.container button:hover{
+    filter: brightness(1.2);
+}
