@@ -8,20 +8,22 @@ function changeHour(){
     const hours = concatenate(hour,minutes,seconds)
     let greeting = getG(hour);
     setHour(greeting,hours);
+    console.log(hour)
 }
 
 function formate(num){
     return num >= 10 ? num : `0${num}`
 }
 function concatenate(hour,minutes,seconds){
-    return `${hour}: ${minutes}: ${seconds}`
+    return `<span class="visor">${hour}</span> : <span class="visor">${minutes}</span> : <span class="seconds visor">${seconds}</span>`
 }
 function getG(hour){
     if(hour < 12){
         return "Bom dia!"
-    }else if(hour >= 12){
+    } 
+    if(hour >= 12 && hour < 18){
         return "Boa tarde!"
-    }else if(hour >= 18){
+    }else{
         return "Boa noite!"
     }
 }
@@ -41,10 +43,6 @@ function changeBg(){
     };
     const body = document.querySelector('body');
     body.classList.toggle('bg-light');
-    rotateBtn(button)
-}
-
-function rotateBtn(button){
     button.classList.toggle('rotate-button')
 }
 
