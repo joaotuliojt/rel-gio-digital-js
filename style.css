@@ -44,6 +44,7 @@ body.bg-light .container{
 
 .container{
     font-size: 3rem;
+    text-transform: uppercase;
     text-align: center;
     color:white;
     position: absolute;
@@ -61,7 +62,9 @@ body.bg-light .container{
     box-shadow: 0px 0px 7px 1px rgba(0, 0,0, 0.7);
     padding: 0 2rem;
 }
-
+.container #greetings{
+    margin-bottom: 3rem;
+}
 .container .seconds{
     color: #ff8811;
 }
@@ -107,7 +110,7 @@ body.bg-light .container{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-60%);
+        transform: translateY(-70%);
     }
 }
 @keyframes downUp {
@@ -115,6 +118,6 @@ body.bg-light .container{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(60%);
+        transform: translateY(70%);
     }
 }

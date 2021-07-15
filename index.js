@@ -8,7 +8,6 @@ function changeHour(){
     const hours = concatenate(hour,minutes,seconds)
     let greeting = getG(hour);
     setHour(greeting,hours);
-    console.log(hour)
 }
 
 function formate(num){
